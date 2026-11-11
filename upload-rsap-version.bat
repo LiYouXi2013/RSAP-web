@@ -4,6 +4,9 @@ echo Confirm:%bn%
 pause
 echo %bn% > rsapver.txt
 
+del .\RSAP\build\language.zip
+7z a ./RSAP/build/language.zip ../RSAP/lang/*.json
+
 copy ..\RSAP\build\main.exe .\RSAP\build\RSAP(build%bn%).exe
 set "file=.\RSAP\downloads.html"
 
