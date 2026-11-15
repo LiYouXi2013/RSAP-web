@@ -59,7 +59,7 @@ nav a:hover {
 
 #overview{
   padding: 30px;
-  color: white; /* 适配你蓝色背景 */
+  color: white;
   font-family: consolas, monospace;
 }
 #overview h1{
