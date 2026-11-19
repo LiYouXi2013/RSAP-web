@@ -7,10 +7,10 @@ echo %bn% > rsapver.txt
 del .\RSAP\build\language.zip
 7z a ./RSAP/build/language.zip ../RSAP/lang/*.json
 
-copy ..\RSAP\build\main.exe .\RSAP\build\RSAP(build%bn%).exe
+copy .\tmpbuild\Setup.exe .\RSAP\build\RSAP(build%bn%).exe
 set "file=.\RSAP\downloads.html"
 
-echo ^<a href="/RSAP/build/RSAP(build%bn%).exe"^>RSAP_Build_%bn%^</a^> > "%file%.tmp"
+echo ^<a href="/RSAP/build/RSAP(build%bn%).exe"^>RSAP_Build_%bn%_Setup^</a^> > "%file%.tmp"
 echo ^<br^> >> "%file%.tmp"
 type "%file%" >> "%file%.tmp"
 
