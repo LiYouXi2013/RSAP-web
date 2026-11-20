@@ -5,8 +5,8 @@ pause
 echo %bn% > rsapver.txt
 
 cd ..
-del build/*.o
-ming32-make -j all LVR=%bn%
+del build\*.o
+mingw32-make -j all LVR=%bn%
 cd RSAP-web
 
 del .\RSAP\build\language.zip
