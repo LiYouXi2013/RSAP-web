@@ -4,6 +4,11 @@ echo Confirm:%bn%
 pause
 echo %bn% > rsapver.txt
 
+cd ..
+del build/*.o
+ming32-make -j all LVR=%bn%
+cd RSAP-web
+
 del .\RSAP\build\language.zip
 7z a ./RSAP/build/language.zip ../lang/*.json
 
